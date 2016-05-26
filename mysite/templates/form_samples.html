@@ -2,36 +2,36 @@
 
 {% block body %}
   <form method="get" action="">
-     {{ form.age.label }}：
-     {{ form.age }}
+     {{ form.distance.label }}：
+     {{ form.distance }}
      <hr>
 
-     {{ form.gender_r.label }}：
-     {% for gender in form.gender_r %}
-        {{ gender }}
+     {{ form.name_r.label }}：
+     {% for name in form.name_r %}
+        {{ name }}
      {% endfor %}
      <hr>
 
-     {{ form.gender_s.label }}：
-     {{ form.gender_s }}
+     {{ form.name_s.label }}：
+     {{ form.name_s }}
      <hr>
 
      {{ form.send_message.label }}：
      {{ form.send_message }}
      <hr>
 
-     {{ form.birthday.label }}：
-     {{ form.birthday }}
+     {{ form.day.label }}：
+     {{ form.day }}
      <hr>
 
-     {{ form.food_s.label }}：
-     {{ form.food_s }}
-     <hr>
-
-     {{ form.food_c.label }}：
-     {% for food in form.food_c %}
-      {{ food }}
+     {{ form.place_r.label }}：
+     {% for place in form.place_r %}
+        {{ place }}
      {% endfor %}
+     <hr>
+
+     {{ form.place_s.label }}：
+     {{ form.place_s }}
      <hr>
 
   </form>
