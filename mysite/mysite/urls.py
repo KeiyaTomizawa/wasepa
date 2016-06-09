@@ -24,4 +24,5 @@ from django.conf.urls import include, url
 
 urlpatterns = [
       url(r'^hello/', include('hello.urls', namespace='hello')),
+      url(r'^wsp_time/', include('wsp_time.urls', namespace='wsp_time')),
 ]

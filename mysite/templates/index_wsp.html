@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block body %}
+ <div>
+   練習記録<br>
+ </div>
+ <div>
+   <a href="{% url 'hello:hello_world' %}">hello_world</a><br>
+   <a href="{% url 'hello:hello_template' %}">template</a><br>
+   <a href="{% url 'hello:hello_if' %}">if</a><br>
+   <a href="{% url 'hello:hello_for' %}">for</a><br>
+ </div>
+{% endblock %}

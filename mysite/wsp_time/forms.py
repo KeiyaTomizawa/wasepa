@@ -2,30 +2,23 @@
 from django import forms
 
 
-class HelloForm(forms.Form):
-      your_name = forms.CharField(
-          label='名前',
-          max_length=20,
-          required=True,
-          widget=forms.TextInput()
-      )
+class TimeForm(forms.Form):
 
-EMPTY_CHOICES = (
-     ('', '-'*10),
-)
+    EMPTY_CHOICES = (
+         ('', '-'*10),
+    )
 
-NAME_CHOICES = (
-     ('oomori', '大森'),
-     ('shimizu', '清水'),
-     ('tomizawa', '富澤'),
+    NAME_CHOICES = (
+         ('oomori', '大森'),
+         ('shimizu', '清水'),
+         ('tomizawa', '富澤'),
 
-)
+    )
 
-PLACE_CHOICES = (
-       ('sagamigawa', '相模川'),
-       ('misakiguchi', '三崎口')
-)
-class SampleForm(forms.Form):
+    PLACE_CHOICES = (
+         ('sagamigawa', '相模川'),
+         ('misakiguchi', '三崎口')
+    )
     distance = forms.IntegerField(
         label='距離',
         min_value=1,
@@ -56,25 +49,11 @@ class SampleForm(forms.Form):
           required=False,
     )
 
-    name_r = forms.ChoiceField(
-         label='名前',
-        widget=forms.RadioSelect,
-         choices=NAME_CHOICES,
-         required=True,
-    )
-
     name_s = forms.ChoiceField(
          label='名前',
          widget=forms.Select,
          choices=EMPTY_CHOICES + NAME_CHOICES,
          required=False,
-    )
-
-    place_r = forms.ChoiceField(
-         label='場所',
-        widget=forms.RadioSelect,
-         choices=PLACE_CHOICES,
-         required=True,
     )
 
     place_s = forms.ChoiceField(

@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /> </head>
+<body>
+   <form action="/cgi-bin/wsp.py"
+         method="POST">
+     <table>
+        <caption>今週の日程</caption>
+        <tr>
+          <th colspan="2">月</th>
+          <th colspan="2">火</th>
+          <th colspan="2">水</th>
+          <th colspan="2">木</th>
+          <th colspan="2">金</th>
+          <th colspan="2">土</th>
+          <th colspan="2">日</th>
+        </tr>
+        <tr>
+          <td colspan="2">{{get('area_1','no')}}</td>
+          <td colspan="2">{{get('area_2','no')}}</td>
+          <td colspan="2">{{get('area_3','no')}}</td>
+          <td colspan="2">{{get('area_4','no')}}</td>
+          <td colspan="2">{{get('area_5','no')}}</td>
+          <td colspan="2">{{get('area_6','no')}}</td>
+          <td colspan="2">{{get('area_7','no')}}</td>
+        </tr>
+        <tr>
+          <td>{{get('time_1_1','no')}}</td>
+          <td>{{get('time_1_2','no')}}</td>
+          <td>{{get('time_2_1','no')}}</td>
+          <td>{{get('time_2_2','no')}}</td>
+          <td>{{get('time_3_1','no')}}</td>
+          <td>{{get('time_3_2','no')}}</td>
+          <td>{{get('time_4_1','no')}}</td>
+          <td>{{get('time_4_2','no')}}</td>
+          <td>{{get('time_5_1','no')}}</td>
+          <td>{{get('time_5_2','no')}}</td>
+          <td>{{get('time_6_1','no')}}</td>
+          <td>{{get('time_6_2','no')}}</td>
+          <td>{{get('time_7_1','no')}}</td>
+          <td>{{get('time_7_2','no')}}</td>
+        </tr>
+        <tr>
+          <td>{{get('p_1_1','no')}}</td>
+          <td>{{get('p_1_2','no')}}</td>
+          <td>{{get('p_2_1','no')}}</td>
+          <td>{{get('p_2_2','no')}}</td>
+          <td>{{get('p_3_1','no')}}</td>
+          <td>{{get('p_3_2','no')}}</td>
+          <td>{{get('p_4_1','no')}}</td>
+          <td>{{get('p_4_2','no')}}</td>
+          <td>{{get('p_5_1','no')}}</td>
+          <td>{{get('p_5_2','no')}}</td>
+          <td>{{get('p_6_1','no')}}</td>
+          <td>{{get('p_6_2','no')}}</td>
+          <td>{{get('p_7_1','no')}}</td>
+          <td>{{get('p_7_2','no')}}</td>
+        </tr>
+     </table>
+   <a href="/">予定設定</a><br>
+   <a href="/views/wsp_boy.html">出欠確認</a><br>
+
+  </form>
+ </body>
+</html>
